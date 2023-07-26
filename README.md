@@ -2,9 +2,9 @@
 
 - The parameters "start=" and "floor=" are required but can be in any order
 - The start parameter is:
-  - Only a single integer
+  - Only a single valid integer
 - The floor parameter contains:
-  - Only integers
+  - Only valid integers
   - Comma delimited
 
 ## TO RUN
