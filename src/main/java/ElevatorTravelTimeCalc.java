@@ -10,7 +10,7 @@ public class ElevatorTravelTimeCalc {
     public static void main(String[] args) {
         // elevator start=12 floor=2,9,1,32
         if (args.length < 2) {
-            System.out.println("INCORRECT SYNTAX: Use java ElevatorTravelTimeCalculator start=<startingFloor> floor=<floor1>,<floor2>,<floorn>");
+            System.out.println("INCORRECT SYNTAX: java -cp . main/java/ElevatorTravelTimeCalculator start=<startingFloor> floor=<floor1>,<floor2>,<floorn>");
             return;
         }
 

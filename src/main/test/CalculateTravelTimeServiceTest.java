@@ -1,6 +1,5 @@
 package main.test;
 
-import main.java.ElevatorTravelTimeCalc;
 import main.java.TravelTimeService;
 import org.junit.jupiter.api.Test;
 
