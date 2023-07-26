@@ -30,10 +30,10 @@ class CalculateTravelTimeServiceTest {
 
         String parametersContainLabel = TravelTimeService.findParameter(STARTING_FLOOR_LBL, parametersWithStartingFloor);
         String parameterMissingLabel = TravelTimeService.findParameter(STARTING_FLOOR_LBL, parametersMissingStartingFloor);
-        String parameterContainsBoth = TravelTimeService.findParameter(STARTING_FLOOR_LBL, parametersContainsBoth);
+        String parameterContainsBoth = TravelTimeService.findParameter(FLOORS_TO_VISIT_LBL, parametersContainsBoth);
 
         assertEquals(parametersContainLabel, startingFloor);
         assertEquals(parameterMissingLabel, null);
-        assertEquals(parameterContainsBoth, startingFloor);
+        assertEquals(parameterContainsBoth, floorToVisit);
     }
 }
