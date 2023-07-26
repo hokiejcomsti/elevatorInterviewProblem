@@ -3,9 +3,9 @@ package main.java;
 import java.util.List;
 
 public class TravelTimeService {
-    private static Integer TRAVEL_TIME_PER_FLOOR = 10;
-    public static Integer calTravelTime(Integer startFloor, List<String> floorsToVisit) {
-        int travelTime = 0;
+    private static final Long TRAVEL_TIME_PER_FLOOR = 10L;
+    public static long calTravelTime(int startFloor, List<String> floorsToVisit) {
+        long travelTime = 0;
         int currentFloor = startFloor;
 
         for (String floor : floorsToVisit) {

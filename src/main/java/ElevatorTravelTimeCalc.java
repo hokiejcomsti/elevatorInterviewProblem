@@ -27,8 +27,8 @@ public class ElevatorTravelTimeCalc {
             floorsToVisit = floorsToVisit.substring(floorsToVisit.indexOf("=")+1);
             List<String> listOfFloors = Arrays.asList(floorsToVisit.split(","));
 
-            int travelTime = TravelTimeService.calTravelTime(intStartFloor, listOfFloors);
-            System.out.println("Total travel time: " + travelTime + " seconds");
+            long travelTime = TravelTimeService.calTravelTime(intStartFloor, listOfFloors);
+            System.out.print(travelTime + " " + startingFloor + "," + floorsToVisit);
         } catch (Exception e) {
             System.out.println("Please provide valid integer values for start and floors");
         }
