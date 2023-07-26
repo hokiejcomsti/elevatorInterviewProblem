@@ -1,6 +1,8 @@
+package main.java;
+
 import java.util.List;
 
-class CalculateTravelTimeService {
+public class TravelTimeService {
     private static Integer TRAVEL_TIME_PER_FLOOR = 10;
     public static Integer calTravelTime(Integer startFloor, List<String> floorsToVisit) {
         int travelTime = 0;
@@ -13,5 +15,12 @@ class CalculateTravelTimeService {
         }
 
         return travelTime;
+    }
+
+    public static String findParameter(String paramToFind, List<String> args){
+        return args.stream()
+                .filter(arg -> arg.contains(paramToFind))
+                .findFirst()
+                .orElse(null);
     }
 }
