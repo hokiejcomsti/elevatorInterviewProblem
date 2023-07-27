@@ -17,10 +17,9 @@ public class TravelTimeService {
         return travelTime;
     }
 
-    public static String findParameter(String paramToFind, List<String> args){
+    public static String findParameter(String paramToFind, List<String> args) {
         return args.stream()
                 .filter(arg -> arg.contains(paramToFind))
-                .findFirst()
-                .orElse(null);
+                .findFirst().orElse(null);
     }
 }

@@ -13,11 +13,11 @@ public class ElevatorTravelTimeCalc {
             String startingFloor = TravelTimeService.findParameter(STARTING_FLOOR_LBL, streamArgs);
             String floorsToVisit = TravelTimeService.findParameter(FLOORS_TO_VISIT_LBL, streamArgs);
 
-            if (null == startingFloor) {
-                System.out.println("Missing field: Start");
+            if (null == startingFloor || startingFloor.isBlank()) {
+                System.out.println("Missing field: Start. Start must be a valid integer.");
                 return;
-            } else if (null == floorsToVisit){
-                System.out.println("Missing field: Floor");
+            } else if (null == floorsToVisit || floorsToVisit.isBlank()){
+                System.out.println("Missing field: Floor. Floor must be a comma separated list of integers.");
                 return;
             }
 

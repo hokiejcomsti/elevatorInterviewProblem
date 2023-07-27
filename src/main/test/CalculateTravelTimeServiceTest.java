@@ -12,6 +12,7 @@ class CalculateTravelTimeServiceTest {
     private static String STARTING_FLOOR_LBL = "start=";
     private static String FLOORS_TO_VISIT_LBL = "floor=";
 
+
     @Test
     public void testCalculateTravelTimeService(){
         Integer startFloor = 12;
